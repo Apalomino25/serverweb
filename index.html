@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Carrito con Accesibilidad por Voz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo"><a href="index.html"><img src="imagenes/logo.jpg" alt="logo de la empresa"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="#contproducts">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count" id="cartCount">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Bienvenido a TIENDA TECNOLOGIA</h1>
+            <p>
+               Nuestra tienda fue creada para que la tecnología sea una oportunidad real 
+               para todos, sin barreras.
+            </p>
+            <button class="btn" id="openAccessibility">Accesibilidad</button>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <main id="contproducts" class="container">
+        <h2>Nuestros Productos</h2>
+        <div id="productsContainer" class="products">
+            <!-- Productos dinámicos -->
+        </div>
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items dinámicos -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceder al Pago</button>
+    </div>
+
+    <!-- Panel de Accesibilidad -->
+    <div class="accessibility-panel" id="accessibilityPanel">
+        <div class="accessibility-content">
+            <button class="close-panel" id="closeAccessibility">&times;</button>
+            <h3>Accesibilidad por Voz</h3>
+            <p>Usa los siguientes botones para interactuar con la página:</p>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="readPageBtn">
+                    <span>📖</span> Leer Página
+                </button>
+            </div>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="listenBtn">
+                    <span>🎤</span> Hablar a la Página
+                </button>
+            </div>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="readCartBtn">
+                    <span>🛒</span> Leer Carrito
+                </button>
+            </div>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="toggleTheme">
+                    <span>🌓</span> Cambiar Tema
+                </button>
+            </div>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="increaseFont">
+                    <span>🔠</span> Aumentar Letra
+                </button>
+            </div>
+
+            <div class="accessibility-option">
+                <button class="accessibility-btn" id="decreaseFont">
+                    <span>🔡</span> Disminuir Letra
+                </button>
+            </div>
+
+            <div class="voice-feedback" id="voiceFeedback">
+                <button class="voice-close" id="closeVoice">&times;</button>
+                <div class="voice-text" id="voiceText">¿En qué puedo ayudarte?</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MiTienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
